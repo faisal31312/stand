@@ -1,3 +1,14 @@
+game:GetService("RunService").heartbeat:Connect(function()
+    for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+        if (v.Animation.AnimationId:match("rbxassetid://2841738899")) then --HOLD KO PT2
+            v:Stop();
+        elseif (v.Animation.AnimationId:match("rbxassetid://2968344043")) then --HOLD KO PICKUP
+            v:Stop();
+        elseif (v.Animation.AnimationId:match("rbxassetid://2838893290")) then --HOLD KO
+            v:Stop();
+        end
+    end
+end)
 -- By Larry#8203
 -- Script Name: Faisal Stand
  
