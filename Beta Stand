@@ -388,7 +388,9 @@ function play(ID, STOP, LMAO)
 end
 --end
  
-CreateTargetAbility("Goto!", function() 
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Goto!") then
+ 
     Stand.Action = ""  -- We will stop any current actions from interfering with this command.
     local Target = Stand.Target
     STAND.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
