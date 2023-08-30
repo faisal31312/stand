@@ -391,10 +391,12 @@ end
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Goto!") then
  
+CreateTargetAbility("Goto!", function() 
     Stand.Action = ""  -- We will stop any current actions from interfering with this command.
     local Target = Stand.Target
     STAND.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 end)
+
  
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("/e noface") then
