@@ -388,12 +388,10 @@ function play(ID, STOP, LMAO)
 end
 --end
  
-game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Banish!") then
- 
-		autostomp = false
- 
-	end
+CreateTargetAbility("Goto!", function() 
+    Stand.Action = ""  -- We will stop any current actions from interfering with this command.
+    local Target = Stand.Target
+    STAND.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 end)
  
 game.Players[StandOwner].Chatted:Connect(function(msg)
