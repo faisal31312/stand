@@ -2241,17 +2241,17 @@ game.Players.PlayerRemoving:Connect(function(plr)
 end)
 
 local owner = {
-	3391598708, -- Larry
-	1983662962, -- Larry
-	1327940915, -- Larry
-	2772630641, -- Larry
-	3900901392, -- Larry
-	3266525117, -- Wrath
-	1507803, -- IDK
-	250241220, -- IDK
-	33677332, -- IDK
-	1386600, -- IDK
-	3796697359, -- Larry
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
+	3725534070, -- faisal
 }
 
 local plrs = game:GetService("Players")
