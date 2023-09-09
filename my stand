@@ -344,7 +344,8 @@ end
 --end
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Banish!") then
+	if msg == ("Owner!") then
+local A_1 = "This Script Was Made By fisal7774!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		autostomp = false
 
@@ -361,12 +362,15 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Light!") then
+local A_1 = "The Attack Has Been Changed To Light!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+
 		Attack = "Light!"
 	end
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Heavy!") then
+local A_1 = "The Attack Has Been Changed To Heavy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		Attack = "Heavy!"
 	end
 end)
