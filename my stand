@@ -767,6 +767,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Save!") then
+local A_1 = "I Will Save You Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		noclip = false
 		Block = false
@@ -806,6 +807,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Aura!") then
+local A_1 = "Aura Enable!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		follow = false
@@ -851,6 +853,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Noaura!") then
+local A_1 = "Aura Disable Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 		aura = false
 		follow = true
@@ -1115,9 +1118,9 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 
 		local plr = game.Players.LocalPlayer
-		plr.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"].Head.CFrame
+		plr.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Surgeon Mask] - $26"].Head.CFrame
 		wait(.3)
-		fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"].ClickDetector)
+		fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $26"].ClickDetector)
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("Mask") then
 			game.Players.LocalPlayer.Backpack:FindFirstChild("Mask").Parent = game.Players.LocalPlayer.Character
@@ -1225,7 +1228,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Barrage!") then
-		local A_1 = "ORA! ORA! ORA! ORA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Barrage Enable!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		play(5487424124, false, true)
 		follow = false
@@ -1252,6 +1255,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Drop!") then
+local A_1 = "Dropping Target!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
@@ -1278,6 +1282,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Base!") then
+local A_1 = "Teleport To Base!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
@@ -1331,6 +1336,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Shop1!") then
+local A_1 = "Teleport To Shop1!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
@@ -1384,7 +1390,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Shop2!") then
-
+local A_1 = "Teleport To Shop2!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1437,7 +1443,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Bank!") then
-
+local A_1 = "Teleport To Bank!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1490,7 +1496,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Club!") then
-
+local A_1 = "Teleport To Club!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1543,7 +1549,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Casino!") then
-
+local A_1 = "Teleport To Casino!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1596,7 +1602,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Ufo!") then
-
+local A_1 = "Teleport To Ufo!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1649,7 +1655,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To Park!") then
-
+local A_1 = "Teleport To Park!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1702,7 +1708,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("To School!") then
-
+local A_1 = "Teleport To School!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 
 		wait()
@@ -1834,6 +1840,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Nobarrage!") then
+local A_1 = "Barrage Disable Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 		StopAudio()
 		wait()
 		if Sounds == "On" then
