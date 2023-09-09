@@ -353,11 +353,19 @@ local A_1 = "This Script Was Made By fisal7774!" local A_2 = "All" local Event =
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("/e noface") then
+	if msg == ("AntiLock!") then
+local A_1 = "AntiLock Has Been Enable Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
-		game.Players.LocalPlayer.Character.Head.face:Destroy()
+getgenv().Sky = true 
+getgenv().SkyAmount = 1600
 
-	end 
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().Sky ~= false then 
+    local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,      getgenv().SkyAmount,0) 
+    game:GetService("RunService").RenderStepped:Wait()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = vel
+    end 
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
@@ -670,9 +678,18 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Golden Experience!") then
-		play(6037482765, false, true)
-	end
+	if msg == ("UnAntiLock!") then
+local A_1 = "AntiLock Has Been Disable Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+getgenv().Sky = false
+getgenv().SkyAmount = 1600
+
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().Sky ~= false then 
+    local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,      getgenv().SkyAmount,0) 
+    game:GetService("RunService").RenderStepped:Wait()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = vel
+    end 
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
