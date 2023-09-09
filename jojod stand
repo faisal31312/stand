@@ -378,10 +378,80 @@ end
 --end
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Banish!") then
-
-		autostomp = false
-
+	if msg == ("to!") then
+  local target14 = StandTarget
+	if target14 then
+		randomanimation()
+		game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+	
+		wait()
+	
+		noclip = true
+		Block = false
+		mimic = false
+		vanish = false
+		killtheplayer = false
+		barragepos = false
+		killnear = false
+		barragepunch = false
+		follow = false
+		evolvefollow = false
+		afklol = false
+		teleportfollow = true
+		if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false then
+			if game.Players.LocalPlayer.Backpack:FindFirstChild("Combat") then
+				game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
+			end
+			wait()
+			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
+			wait(3)
+			randomanimation()
+			repeat wait()
+				if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
+					teleportfollow = false
+					TWEEN(CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,5,0))
+					wait(.2)
+					game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+					wait(.1)
+					TWEEN(CFrame.new(target14.Character.UpperTorso.Position) * CFrame.new(0,0,3))
+					wait(.4)
+					game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+		
+				end
+		
+				if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false then
+		
+					noclip = true
+					follow = true
+				end
+			until game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false	
+		
+			wait()
+		
+			game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+		else
+			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
+				repeat wait()
+					if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
+						teleportfollow = false
+						TWEEN(CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,5,0))
+						wait(.2)
+						game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+						wait(.1)
+						TWEEN(CFrame.new(target14.Character.UpperTorso.Position) * CFrame.new(0,0,3))
+						wait(.4)
+						game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+			
+					end
+			
+					if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false then
+			
+						noclip = true
+						follow = true
+					end
+				until game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false	
+			end
+		end	
 	end
 end)
 
