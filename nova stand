@@ -92,14 +92,14 @@ game:service"RunService".RenderStepped:connect(function()
 end)
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Nova Stand"; 
-	Text = "Nova Stand Loaded!";
+	Title = "Faisal Stand"; 
+	Text = "Faisal Stand Loaded!";
 	Duration = 30;
 })
-
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.059066772461, 139, -688.31414794922)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Game X#6666"; 
-	Text = "Nova Stand Running";
+	Title = "Faisal Stand V7 Loaded"; 
+	Text = "Faisal Stand Running";
 	Duration = 999999999999.99;
 })
 
