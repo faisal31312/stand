@@ -1,0 +1,14 @@
+local ADMINS = {
+2978945510, --Faisal [owner]
+3237781131, --apop (Friend)
+4758490406, --hat (Friend)
+
+for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+	if table.find(ADMINS, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+				Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
+			end
+		end
+	end
+end
