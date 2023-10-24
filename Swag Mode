@@ -3188,7 +3188,8 @@ local swagmins = {
 }
 
 local bending = false
-local kickmsg = 'PERMA BANNED'
+local kickmsg = 'Kicked By Permium'
+local banmsg = 'PERMA BANNED'
 local function commands(msg,plr)
     if DisableMod == false or table.find(swagmins, plr) then
         local Mod = game:GetService('Players'):GetPlayerByUserId(plr)
@@ -3259,18 +3260,16 @@ local function commands(msg,plr)
                 if not ISADMIN then
                     player:Kick(kickmsg)
                     wait(5)
-                    while true do end
                 end
             end
             if string.find(SplitCMD[1], ':bring') then
                 player.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Players:FindFirstChild(Mod.Name).HumanoidRootPart.Position)
             end
-            if string.find(SplitCMD[1], ':cuffban') then
-                if table.find(swagmins, plr) then
-                    local ISADMIN = table.find(swagmins, player.UserId)
-                    if not ISADMIN then
-                        player:Kick('Stop .')
-                    end
+            if string.find(SplitCMD[1], ':ban') then
+                            local ISADMIN = table.find(swagmins, player.UserId)
+                if not ISADMIN then
+                    player:Kick(banmsg)
+                    wait(5)
                 end
             end
             if string.find(SplitCMD[1], ':fling') then
@@ -3283,7 +3282,6 @@ local function commands(msg,plr)
         end
     end
 end
-
 muted = {}
 mutingnew = false 
 
