@@ -3278,12 +3278,7 @@ local function commands(msg,plr)
         end
     end
 end
-if string.find(SplitCMD[1], ':kill') then
-			game.Players.LocalPlayer.Character.Humanoid:Destroy()
-		end
-	end
- 
-end)
+
 muted = {}
 mutingnew = false 
 
