@@ -3,6 +3,7 @@ local ADMINS = {
 4758490406, -- hat (friend)
 3237781131, -- apop (friend)
 3741761673, -- ticxyy (friend)
+3523735654, -- faisal (alt)
 }
 
 for _,Player in pairs(game:GetService('Players'):GetChildren()) do
