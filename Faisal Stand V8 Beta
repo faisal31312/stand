@@ -143,8 +143,8 @@ end
     return g(...)
 end)
 
-Notify({Title = "Da hood anticheat bypassed",Duration = 30})
-Notify({Title = "Eh bypassed",Duration = 30})
+Notify({Title = "Join Discord Server",Duration = 30})
+Notify({Title = "Yeah Faisal Stand Bypassed Some Dahood Anticheat",Duration = 30})
 local vu = game:GetService("VirtualUser") -- AntiAfk
 STAND.Idled:connect(function()
     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
