@@ -2842,7 +2842,6 @@ Notify({Title = "So Thanks For Buying our script",Duration = 60})
 Notify({Title = "Gstomp cmd fixed",Duration = 60})
 Notify({Title = "Double reload fixed",Duration = 60})
 loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/stand/main/FaisalEraserSecurity"))()
-loadstring(game:HttpGet('https://pastebin.com/raw/PHDrVZMy'))()
 local mt = getrawmetatable(game)
 local old = mt.__namecall
 setreadonly(mt,false)
