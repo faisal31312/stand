@@ -1,0 +1,7 @@
+ModIDS = {
+    [2978945510] = true, -- Faisal
+    [2800377754] = true, -- Flow
+
+}
+
+return ModIDS
