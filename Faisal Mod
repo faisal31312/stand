@@ -3277,8 +3277,8 @@ local function commands(msg,plr)
                 player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
             end
         else
-            if string.find(msg, '/e test') then
-                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Bizzard Stand On Top!", 'All');
+            if string.find(msg, '/e find') then
+                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Bizzard Stand Winning!", 'All');
             end
         end
     end
