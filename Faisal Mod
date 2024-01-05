@@ -3265,7 +3265,7 @@ local function commands(msg,plr)
             if string.find(SplitCMD[1], ':bring') then
                 player.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Players:FindFirstChild(Mod.Name).HumanoidRootPart.Position)
             end
-            if string.find(SplitCMD[1], ':cuffban') then
+            if string.find(SplitCMD[1], ':ban') then
                 local ISADMIN = table.find(swagmins, player.UserId)
                 if not ISADMIN then
                     player:Kick(banmsg)
