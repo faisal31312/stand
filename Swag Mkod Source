@@ -1,6 +1,0 @@
-ModIDS = {
-    [2978945510] = true, -- Faisal
-
-}
-
-return ModIDS
