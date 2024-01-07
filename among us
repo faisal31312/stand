@@ -1,6 +1,0 @@
-game:GetService('StarterGui'):SetCore("SendNotification", {
-    Title    = 'Faisal carry Good Was Made By fisal#7774';
-    Text     = 'You Cant Daisable It Until You Rejoin!';
-    Duration = 3.4028235e+38;
-
-});
