@@ -403,6 +403,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		aura = false
 		noclip = true
 		hoveranim:Play()
+                StopAudio()
 	end
 end)
 
@@ -528,7 +529,7 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 		wait(.2)
 		local A_1 = "Powers Disabled!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
-		follow = false
+		follow = true
 		oranear = false
 		autostomp = false
 		barragepos = false
@@ -1119,9 +1120,9 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 
 		local plr = game.Players.LocalPlayer
-		plr.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"].Head.CFrame
+		plr.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].Head.CFrame
 		wait(.3)
-		fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"].ClickDetector)
+		fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].ClickDetector)
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("Mask") then
 			game.Players.LocalPlayer.Backpack:FindFirstChild("Mask").Parent = game.Players.LocalPlayer.Character
